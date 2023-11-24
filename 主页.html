@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Eve-15" />
+    <meta name="keywords" content="HTML, CSS" />
+    <title>云顶之奕S10赛季</title>
+
+<style>
+    .background {
+        background-image:url("https://game.gtimg.cn/images/lol/act/a20231121tftset10/bg1.jpg "),url("https://game.gtimg.cn/images/lol/tft/content-site/default-theme/champion-detail-mask.png"),url("https://game.gtimg.cn/images/lol/tft/content-site/logo-tft.png");
+        background-repeat: repeat-x,repeat-x,no-repeat;
+        background-position:top,0% 100%,50% 50%;
+        background-color: rgb(51, 49, 51)
+    }
+/*到此处为背景图片*/
+    ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    padding: 14px 16px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+li>a.active {
+    background-color: green;
+}
+
+li>a:hover:not(a.active),
+.dropbtn:hover {
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+}
+
+.dropdown-content a {
+    color: white;
+    display: block;
+
+}
+
+.dropdown-content a:hover {
+    color: deepskyblue;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*到此处为导航条及下拉菜单*/
+</style>
+</head>
+<body class="background"><!--此处为背景-->
+<div><!--此处为导航条及下拉菜单记得调整颜色-->
+
+    <ul>
+        <li><a href=D:\front-end\云顶之奕S10\主页\part1.html>主页</a></li>
+        <li><a href=D:\front-end\云顶之奕S10\主页\part2.html>羁绊</a></li>
+        <li>
+            <div class="dropdown"> <a href="#" class="dropbtn">英雄</a>
+                <div class="dropdown-content"> <a href="#">一费卡</a> <a href="#">二费卡</a> <a href="#">三费卡</a>  <a href="#">四费卡</a>  <a href="#">五费卡</a> </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
