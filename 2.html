@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <title>新疆百科</title>
+</head>
+
+<body class="aboutBody">
+    <main>
+        <div class="search-wrapper">
+            <div class="logoBox">
+                <img src="Image\1.jpg" alt="">
+                <p class="logo"> logo文本</p>
+            </div>
+    
+        </div>
+        <div class="swipper">
+            <ul class="imgList">
+                <li class="imgList-item active"><img src="Image\1.jpg" alt=""></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="navMenu">
+                <li>
+                    <a href="index.html">模块1</a>
+                </li>
+                <li class="current">
+                    <a href="2.html">模块2</a>
+                </li>
+                <li>
+                    <a href="3.html">模块3</a>
+                </li>
+                <li>
+                    <a href="4.html">模块4</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            
+            <div class="aboutBox">
+                <div class="titleStyle">
+                    <div class="titleBox">
+                        <p class="line"></p>
+                        <p>线内文本</p>
+                        <p class="line"></p>
+                    </div>
+                </div>
+                <div class="flexLR flexLR3_7">
+                    <div>
+                        <img src="Image\1.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>
+                            段1
+                        </p>
+                        <p>
+                            段2
+                        </p>
+                    </div>
+                </div>
+                <div class="titleStyle">
+                    <div class="titleBox">
+                        <p class="line"></p>
+                        <p>线内文本</p>
+                        <p class="line"></p>
+                    </div>
+                </div>
+                <table width="100%">
+                    <p>文本</p>
+                </table>
+              
+                <div class="infoBox">
+                    <div class="titleStyle">
+                        <div class="titleBox">
+                            <p class="line"></p>
+                            <p>图片欣赏</p>
+                            <p class="line"></p>
+                        </div>
+                    </div>
+
+                    <div class="xinxi_solution_main">
+                        <div class="xinxi_solution_bg">
+                            <div class="main_mobile">
+                                <ul>
+                                    <li class="one on">
+                                        <div class="left"></div>
+                                        <div class="left_top">
+                                            <i>图片文本1</i>
+                                        </div>
+                                     
+                                    </li>
+                                    <li class="one">
+                                        <div class="left"></div>
+                                        <div class="left_top">
+                                            <i>图片文本2</i>
+                                        </div>
+                                  
+                                    </li>
+                                    <li class="one">
+                                        <div class="left"></div>
+                                        <div class="left_top">
+                                            <i>图片文本3</i>
+                                        </div>
+                                       
+                                    </li>
+                                    <li class="one">
+                                        <div class="left"></div>
+                                        <div class="left_top">
+                                            <i>图片文本4</i>
+                                        </div>
+                                      
+                                    </li>
+                                    <li class="one">
+                                        <div class="left"></div>
+                                        <div class="left_top">
+                                            <i>图片文本5</i>
+                                        </div>
+                                    </li>
+                                    <li class="one">
+                                        <div class="left"></div>
+                                        <div class="left_top">
+                                            <i> 图片文本6</i>
+                                        </div>
+                                    </li>
+                                    <li class="one">
+                                        <div class="left"></div>
+                                        <div class="left_top">
+                                            <i>图片文本7</i>
+                                        </div>
+                                    </li>
+                                    <li class="one">
+                                        <div class="left"></div>
+                                        <div class="left_top">
+                                            <i>图片文本8</i>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>foot</p>
+            <p>foot</p>
+        </footer>
+    </main>
+</body>
+<script type="text/javascript">
+    $(function() {
+        $('.xinxi_solution_main ul li:eq(0)').addClass('on');
+        $('.xinxi_solution_main ul li:eq(1)').addClass('b2');
+        $('.xinxi_solution_main ul li:eq(2)').addClass('b3');
+        $('.xinxi_solution_main ul li:eq(3)').addClass('b4');
+        $('.xinxi_solution_main ul li:eq(4)').addClass('b5');
+        $('.xinxi_solution_main ul li:eq(5)').addClass('b6');
+        $('.xinxi_solution_main ul li:eq(6)').addClass('b7');
+        //解决方案效果
+        $('.xinxi_solution_main ul li').each(function() {
+            var left_h = $(this).find('.left_top').height();
+            $(this).find('.left_top').css({
+                'top': '50%',
+                'margin-top': -left_h / 2
+            });
+    
+            var dl_h = $(this).find('.right dl').height();
+            $(this).find('.right dl').css({
+                'margin-top': -dl_h / 2
+            });
+        });
+        $('.xinxi_solution_main ul li').click(function() {
+            $(this).addClass('on').siblings().removeClass('on');
+        });
+        $('.xinxi_solution_main_mobile ul li:first-child').addClass('on');
+    });
+    </script>
+</html>
